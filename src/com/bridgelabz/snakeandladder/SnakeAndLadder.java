@@ -21,9 +21,9 @@ public class SnakeAndLadder {
 				System.out.println();
 			}
 			else if (Option == 2) {
-					PositionOfPlayer = Math.abs(RolledDice - PositionOfPlayer);
-					System.out.println("Player got Snake, position of player is: " +PositionOfPlayer);
-					System.out.println();	
+				PositionOfPlayer = Math.abs(RolledDice - PositionOfPlayer);
+				System.out.println("Player got Snake, position of player is: " +PositionOfPlayer);
+				System.out.println();	
 			}
 			else {
 				System.out.println("Player got No Play, position of player is: " +PositionOfPlayer);
