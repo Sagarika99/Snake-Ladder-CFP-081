@@ -5,12 +5,13 @@ import java.util.Random;
 public class SnakeAndLadder {
 	public static void main(String[] args){
 		int PositionOfPlayer = 0;
+		int NumOfTimesDiceRolled=0;
 			
-		 do {
+		while (PositionOfPlayer < 100) {
 			Random rand = new Random();
 			int RolledDice = (rand.nextInt(6)+1);
-				
 			System.out.println("The Number on the dice is: " +RolledDice);
+			NumOfTimesDiceRolled++;
 			
 			Random randOption = new Random();
 			int Option = (randOption.nextInt(3));
@@ -34,9 +35,9 @@ public class SnakeAndLadder {
 				System.out.println("Player got No Play, position of player is: " +PositionOfPlayer);
 				System.out.println();				
 			}
-		}while (PositionOfPlayer < 100);
-		 
-	System.out.println("You Won the game!");
-	
+			
+		}
+		System.out.println("No. of times Dice rolled: " +NumOfTimesDiceRolled);		
+	System.out.println("You Won the game!");	
 	}
 }
