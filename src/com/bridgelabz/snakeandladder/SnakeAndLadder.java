@@ -35,6 +35,8 @@ public class SnakeAndLadder {
 				System.out.println();				
 			}
 		}while (PositionOfPlayer < 100);
+		 
+	System.out.println("You Won the game!");
 	
 	}
 }
